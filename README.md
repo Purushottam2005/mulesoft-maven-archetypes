@@ -19,3 +19,10 @@ This project is [MuleSoft's](http://www.mulesoft.org) community contribution and
 
 ## Feedback
 We'll accept community feedback and open source contributions via GitHub forks and pull requests.  You can email us comments at [code-contrib@mulesoft.com](mailto:code-contrib@mulesoft.com)
+
+## References
+Tomcat Maven Plugin Homepage
+[http://mojo.codehaus.org/tomcat-maven-plugin/](http://mojo.codehaus.org/tomcat-maven-plugin/)
+
+Tomcat Maven Plugin Deployment Options
+[http://mojo.codehaus.org/tomcat-maven-plugin/deployment.html](http://mojo.codehaus.org/tomcat-maven-plugin/deployment.html)
