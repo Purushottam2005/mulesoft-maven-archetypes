@@ -19,6 +19,11 @@ specific language governing permissions and limitations
 under the License.
 -->
 
+<!--
+Derived from legacy Apache codebase:
+http://svn.apache.org/repos/asf/maven/archetype/branches/archetype-1.0.x/maven-archetype-bundles
+-->
+
 <project xmlns="http://maven.apache.org/POM/4.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
@@ -27,11 +32,12 @@ under the License.
     <groupId>org.apache.maven.archetypes</groupId>
     <version>3</version>
   </parent>
+  
   <modelVersion>4.0.0</modelVersion>
   <description>
     An archetype which contains a sample Maven Webapp project.
   </description>
-  <artifactId>maven-archetype-webapp</artifactId>
-  <name>Maven Webapp Archetype</name>
+  <artifactId>maven-archetype-tomcat-webapp</artifactId>
+  <name>Maven Tomcat-enabled Webapp Archetype</name>
   <version>1.1-SNAPSHOT</version>
 </project>

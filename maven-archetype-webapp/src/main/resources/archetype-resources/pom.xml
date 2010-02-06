@@ -5,8 +5,9 @@
   <artifactId>${artifactId}</artifactId>
   <packaging>war</packaging>
   <version>${version}</version>
-  <name>${artifactId} Maven Webapp</name>
-  <url>http://maven.apache.org</url>
+  <name>${artifactId} Maven Tomcat-enabled Webapp</name>
+  <url>http://mulesoft.org</url>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -15,14 +16,15 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
   <build>
     <finalName>${artifactId}</finalName>
   </build>
   
   <plugin>
     <groupId>org.codehaus.mojo</groupId>
-    <artifactId>sysdeo-tomcat-maven-plugin</artifactId>
-    <version>1.1</version>
+    <artifactId>tomcat-maven-plugin</artifactId>
+    <version>1.0-beta-1</version>
     <configuration>
             <contextFile>path/to/my/contextFile.xml</contextFile>
     </configuration>
