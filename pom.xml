@@ -16,12 +16,12 @@
       <repository>
         <id>muleforge-releases</id>
         <name>MuleForge Releases</name>
-        <url>scm:svn:https://svn.muleforge.org/maven2/</url>
+        <url>svn:https://svn.muleforge.org/maven2/</url>
       </repository>
       <snapshotRepository>
         <id>muleforge-snapshots</id>
         <name>MuleForge Snapshots</name>
-        <url>scm:svn:https://svn.muleforge.org/maven2/</url>
+        <url>svn:https://svn.muleforge.org/maven2/</url>
       </snapshotRepository>
     </distributionManagement>
 
