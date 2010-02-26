@@ -4,7 +4,7 @@
 
     <groupId>org.mulesoft.archetypes</groupId>
     <artifactId>archetypes</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <name>MuleSoft Archetypes</name>
     <packaging>pom</packaging>
 
