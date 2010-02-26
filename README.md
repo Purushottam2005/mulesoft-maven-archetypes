@@ -8,9 +8,9 @@ This project is [MuleSoft's](http://www.mulesoft.org) community contribution and
 1. On one line, type the following command, replacing _com.mysamplecompany_, _my-sample-webapp_ and _1.0-SNAPSHOT_ as you desire.
 
     <code>mvn org.apache.maven.plugins:maven-archetype-plugin:2.0-alpha-4:generate
-    -DarchetypeGroupId=org.mulesoft.maven.archetypes
-   -DarchetypeArtifactId=maven-archetype-tomcat-webapp
-   -DarchetypeVersion=1.1-SNAPSHOT
+    -DarchetypeGroupId=org.mulesoft.archetypes
+   -DarchetypeArtifactId=tomcat-webapp-archetype
+   -DarchetypeVersion=1.0-SNAPSHOT
    -DgroupId=com.mysamplecompany
    -DartifactId=my-sample-webapp
    -Dversion=1.0-SNAPSHOT</code>
