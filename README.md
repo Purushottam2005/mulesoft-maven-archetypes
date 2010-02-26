@@ -18,6 +18,12 @@ This project is [MuleSoft's](http://www.mulesoft.org) community contribution and
 2. Change directories into the newly minted folder, and then type `mvn tomcat:run`.  This will build your code and launch the embedded tomcat.
 3. Open your web browser to `http://localhost:8080/my-sample-webapp/`
      
+## Repo
+
+This project is hosted in the MuleForge Maven Repository at:
+http://admin.muleforge.org/projects/maven2
+
+Add this to your Maven settings.xml or repository manager proxies.
 
 ## Feedback
 We'll accept community feedback and open source contributions via GitHub forks and pull requests.  You can email us comments at [code-contrib@mulesoft.com](mailto:code-contrib@mulesoft.com)
