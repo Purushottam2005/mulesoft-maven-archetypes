@@ -25,16 +25,10 @@
         <url>scm:svn:https://svn.muleforge.org/maven2/</url>
       </snapshotRepository>
     </distributionManagement>
-    
+
     <scm>
-       <!-- You would think this is a Public Read-Only connection, but it allows for authenticated PUSH too -->
-       <connection>scm:git:git://github.com:mulesoft/mulesoft-maven-archetypes.git</connection>
-        <developerConnection>scm:git:git://github.com:mulesoft/mulesoft-maven-archetypes.git</developerConnection>
-       <url>http://github.com/mulesoft/mulesoft-maven-archetypes.git</url>
-     </scm>
-    <scm>
-      <connection>scm:svn:https://svn.muleforge.org/maven2/</connection>
-      <developerConnection></developerConnection>
-      <url>http://admin.muleforge.org/projects/maven2/</url>
+      <connection>scm:git:git://github.com:mulesoft/mulesoft-maven-archetypes.git</connection>
+      <developerConnection>scm:git:git://github.com:mulesoft/mulesoft-maven-archetypes.git</developerConnection>
+      <url>http://github.com/mulesoft/mulesoft-maven-archetypes.git</url>
     </scm>
 </project>
