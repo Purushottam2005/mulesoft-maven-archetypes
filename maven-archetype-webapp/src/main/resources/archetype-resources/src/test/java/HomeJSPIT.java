@@ -2,7 +2,7 @@ package $package;
 
 import net.sourceforge.jwebunit.junit.WebTestCase;
 
-public class HomeJSPTest extends WebTestCase {
+public class HomeJSPIT extends WebTestCase {
 	
     public void setUp() throws Exception {
         super.setUp();
@@ -10,7 +10,7 @@ public class HomeJSPTest extends WebTestCase {
     }
 
     public void testHomeJSPTitle() {
-        beginAt("/");
+        beginAt("/$artifactId");
         // clickLink("login");
         assertTitleEquals("A sample JSP");
         // setTextField("username", "test");
