@@ -1,13 +1,15 @@
+package $package;
+
 import net.sourceforge.jwebunit.junit.WebTestCase;
 
 public class HomeJSPTest extends WebTestCase {
 	
-    public void setUp() {
+    public void setUp() throws Exception {
         super.setUp();
         setBaseUrl("http://localhost:8080/");
     }
 
-    public void test1() {
+    public void testHomeJSPTitle() {
         beginAt("/");
         // clickLink("login");
         assertTitleEquals("A sample JSP");
