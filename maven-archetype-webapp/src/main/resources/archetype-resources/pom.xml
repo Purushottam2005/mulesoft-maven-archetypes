@@ -49,7 +49,7 @@
             <id>standalone-deploy</id>
             <phase>pre-integration-test</phase>
               <goals>
-                <goal>deploy</goal>
+                <goal>redeploy</goal>
               </goals>
             <configuration></configuration>
           </execution>
@@ -60,6 +60,24 @@
                 <goal>undeploy</goal>
               </goals>
             <configuration></configuration>
+          </execution>
+        </executions>
+      </plugin>
+      
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>integration-test</id>
+            <phase>integration-test</phase>
+            <goals>
+              <goal>test</goal>
+            </goals>
+            <configuration>
+              <includes>
+                <include>**/*IT.java</include>
+              </includes>
+            </configuration>
           </execution>
         </executions>
       </plugin>
