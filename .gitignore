@@ -2,4 +2,4 @@ target
 *.log
 .eclipse
 .project
-test-sample-webapp
+temp
