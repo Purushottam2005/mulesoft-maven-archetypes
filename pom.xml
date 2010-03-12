@@ -10,6 +10,7 @@
 
     <modules>
       <module>maven-archetype-webapp</module>
+      <module>maven-archetype-wicket</module>
     </modules>
     
     <build>

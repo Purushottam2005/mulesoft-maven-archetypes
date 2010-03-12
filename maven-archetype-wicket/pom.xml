@@ -3,13 +3,12 @@
   <parent>
 		<groupId>org.apache.wicket</groupId>
 		<artifactId>wicket-parent</artifactId>
-		<version>1.5-SNAPSHOT</version>
-		<relativePath>../../pom.xml</relativePath>
+		<version>1.4.7</version>
   </parent>
   
-  <artifactId>wicket-archetype-quickstart</artifactId>
+  <artifactId>tomcat-wicket-archetype</artifactId>
   <packaging>maven-plugin</packaging>
-  <name>Wicket Quickstart Archetype</name>
+  <name>Maven Tomcat-enabled Wicket Archetype</name>
 
 	<build>
 		<resources>
