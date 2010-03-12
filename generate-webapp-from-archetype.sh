@@ -1,3 +1,4 @@
+rm -rf temp
 mkdir temp
 cd temp
 mvn org.apache.maven.plugins:maven-archetype-plugin:2.0-alpha-4:generate\
@@ -7,3 +8,6 @@ mvn org.apache.maven.plugins:maven-archetype-plugin:2.0-alpha-4:generate\
  -DgroupId=com.mysamplecompany\
  -DartifactId=temp-sample-webapp\
  -Dversion=1.0-SNAPSHOT
+
+cd temp-sample-webapp
+mvn verify
