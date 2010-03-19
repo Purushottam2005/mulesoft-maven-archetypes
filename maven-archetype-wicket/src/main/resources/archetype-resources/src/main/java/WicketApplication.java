@@ -1,4 +1,4 @@
-package ${packageName};
+package $package;
 
 import org.apache.wicket.protocol.http.WebApplication;
 
