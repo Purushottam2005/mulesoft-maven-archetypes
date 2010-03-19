@@ -21,6 +21,8 @@
           <version>1.9</version>
         </extension>
       </extensions>
+      
+      <defaultGoal>install</defaultGoal>
     </build>
     
     <distributionManagement>
