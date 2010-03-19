@@ -56,8 +56,6 @@ http://svn.apache.org/repos/asf/maven/archetype/branches/archetype-1.0.x/maven-a
             <goals>
               <goal>org.apache.maven.plugins:maven-archetype-plugin:generate</goal>
             </goals>
-            <!-- Doesn't work with Maven 3.0. Fails to copy archetype JAR to the local repo at target/it/repo/org/company/maven/archetype/quickstart/.... -->
-            <!-- http://jira.codehaus.org/browse/MINVOKER-99 -->
             <localRepositoryPath>${project.build.directory}/it/repo</localRepositoryPath> 
             <pomIncludes>
               <pomInclude>*</pomInclude>
