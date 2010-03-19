@@ -1,29 +1,62 @@
 <project>
   <modelVersion>4.0.0</modelVersion>
   <parent>
-		<groupId>org.apache.wicket</groupId>
-		<artifactId>wicket-parent</artifactId>
-		<version>1.4.7</version>
+    <groupId>org.mulesoft.archetypes</groupId>
+    <artifactId>archetypes</artifactId>
+    <version>1.0.4-SNAPSHOT</version>
   </parent>
-  
+
   <artifactId>tomcat-wicket-archetype</artifactId>
-  <packaging>maven-plugin</packaging>
+  <packaging>maven-archetype</packaging>
   <name>Maven Tomcat-enabled Wicket Archetype</name>
   <version>0.9-SNAPSHOT</version>
 
-	<build>
-		<resources>
-			<resource>
-				<filtering>false</filtering>
-				<directory>${basedir}/src/main/resources</directory>
-				<includes>
-					<include>**/*</include>
-				</includes>
-			</resource>
-		</resources>
-		
-		<pluginManagement>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.7</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>2.3</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.5.8</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>1.5.8</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+
+  <build>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.archetype</groupId>
+        <artifactId>archetype-packaging</artifactId>
+        <version>2.0-alpha-4</version>
+      </extension>
+    </extensions>    
+
+    <pluginManagement>
       <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-archetype-plugin</artifactId>
+          <version>2.0-alpha-4</version>
+          <extensions>true</extensions>
+        </plugin>
+
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-invoker-plugin</artifactId>
@@ -42,8 +75,6 @@
             <goals>
               <goal>org.apache.maven.plugins:maven-archetype-plugin:generate</goal>
             </goals>
-            <!-- Doesn't work with Maven 3.0. Fails to copy archetype JAR to the local repo at target/it/repo/org/company/maven/archetype/quickstart/.... -->
-            <!-- http://jira.codehaus.org/browse/MINVOKER-99 -->
             <localRepositoryPath>${project.build.directory}/it/repo</localRepositoryPath> 
             <pomIncludes>
               <pomInclude>*</pomInclude>
@@ -62,13 +93,30 @@
         </plugin>
       </plugins>
     </pluginManagement>
-		
-		<plugins>
+
+    <plugins>
+      <plugin>
+        <artifactId>maven-clean-plugin</artifactId>
+        <version>2.3</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>clean</goal>
+            </goals>
+            <phase>validate</phase>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-archetype-plugin</artifactId>
+        <extensions>true</extensions>
+      </plugin>
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-invoker-plugin</artifactId>
       </plugin>
     </plugins>
-	</build>
-	
+  </build>
 </project>
