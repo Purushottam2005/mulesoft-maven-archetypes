@@ -1,4 +1,4 @@
-package $package;
+package ${package};
 
 import junit.framework.TestCase;
 import org.apache.wicket.util.tester.WicketTester;
