@@ -1,13 +1,27 @@
 rm -rf temp
 mkdir temp
 cd temp
+
+#Sample of standard web app
 mvn org.apache.maven.plugins:maven-archetype-plugin:2.0-alpha-4:generate\
  -DarchetypeGroupId=org.mulesoft.archetypes\
  -DarchetypeArtifactId=tomcat-webapp-archetype\
  -DarchetypeVersion=1.0.4-SNAPSHOT\
  -DgroupId=com.mysamplecompany\
- -DartifactId=temp-sample-webapp\
+ -DartifactId=temp-sample-jsp-webapp\
  -Dversion=1.0-SNAPSHOT
 
-cd temp-sample-webapp
+cd temp-sample-jsp-webapp
+mvn verify
+
+#Sample of Wicket web app
+mvn org.apache.maven.plugins:maven-archetype-plugin:2.0-alpha-4:generate\
+ -DarchetypeGroupId=org.mulesoft.archetypes\
+ -DarchetypeArtifactId=tomcat-wicket-archetype\
+ -DarchetypeVersion=1.0.4-SNAPSHOT\
+ -DgroupId=com.mysamplecompany\
+ -DartifactId=temp-sample-wicket-webapp\
+ -Dversion=1.0-SNAPSHOT
+
+cd temp-sample-wicket-webapp
 mvn verify
