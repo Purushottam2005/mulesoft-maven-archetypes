@@ -6,7 +6,7 @@ pushd temp
 mvn org.apache.maven.plugins:maven-archetype-plugin:2.0-alpha-4:generate\
  -DarchetypeGroupId=org.mulesoft.archetypes\
  -DarchetypeArtifactId=tomcat-webapp-archetype\
- -DarchetypeVersion=1.0.4-SNAPSHOT\
+ -DarchetypeVersion=1.0.5-SNAPSHOT\
  -DgroupId=com.mysamplecompany\
  -DartifactId=temp-sample-jsp-webapp\
  -Dversion=1.0-SNAPSHOT
@@ -19,7 +19,7 @@ popd
 mvn org.apache.maven.plugins:maven-archetype-plugin:2.0-alpha-4:generate\
  -DarchetypeGroupId=org.mulesoft.archetypes\
  -DarchetypeArtifactId=tomcat-wicket-archetype\
- -DarchetypeVersion=1.0.4-SNAPSHOT\
+ -DarchetypeVersion=1.0.5-SNAPSHOT\
  -DgroupId=com.mysamplecompany\
  -DartifactId=temp-sample-wicket-webapp\
  -Dversion=1.0-SNAPSHOT
