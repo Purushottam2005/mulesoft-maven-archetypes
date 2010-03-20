@@ -5,16 +5,16 @@ http://svn.apache.org/repos/asf/maven/archetype/branches/archetype-1.0.x/maven-a
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  
+
   <parent>
     <groupId>org.mulesoft.archetypes</groupId>
     <artifactId>archetypes</artifactId>
     <version>1.0.4-SNAPSHOT</version>
   </parent>
-  
+
   <artifactId>tomcat-webapp-archetype</artifactId>
   <packaging>maven-archetype</packaging>
-  
+
   <name>Maven Tomcat-enabled Webapp Archetype</name>
   <description>
     An archetype which contains a sample Maven Webapp project.
@@ -28,7 +28,7 @@ http://svn.apache.org/repos/asf/maven/archetype/branches/archetype-1.0.x/maven-a
         <version>2.0-alpha-4</version>
       </extension>
     </extensions>
-    
+
     <pluginManagement>
       <plugins>
         <plugin>
@@ -37,7 +37,7 @@ http://svn.apache.org/repos/asf/maven/archetype/branches/archetype-1.0.x/maven-a
           <version>2.0-alpha-4</version>
           <extensions>true</extensions>
         </plugin>
-        
+
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-invoker-plugin</artifactId>
@@ -74,7 +74,7 @@ http://svn.apache.org/repos/asf/maven/archetype/branches/archetype-1.0.x/maven-a
         </plugin>
       </plugins>
     </pluginManagement>
-    
+
     <plugins>
       <plugin>
         <artifactId>maven-clean-plugin</artifactId>
@@ -88,12 +88,12 @@ http://svn.apache.org/repos/asf/maven/archetype/branches/archetype-1.0.x/maven-a
           </execution>
         </executions>
       </plugin>
-      
+
       <plugin>
         <artifactId>maven-archetype-plugin</artifactId>
         <extensions>true</extensions>
       </plugin>
-      
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-invoker-plugin</artifactId>

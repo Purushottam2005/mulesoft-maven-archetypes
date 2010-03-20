@@ -1,46 +1,46 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-    <modelVersion>4.0.0</modelVersion>
+  <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.mulesoft.archetypes</groupId>
-    <artifactId>archetypes</artifactId>
-    <version>1.0.4-SNAPSHOT</version>
-    <name>MuleSoft Archetypes</name>
-    <packaging>pom</packaging>
+  <groupId>org.mulesoft.archetypes</groupId>
+  <artifactId>archetypes</artifactId>
+  <version>1.0.4-SNAPSHOT</version>
+  <name>MuleSoft Archetypes</name>
+  <packaging>pom</packaging>
 
-    <modules>
-      <module>maven-archetype-webapp</module>
-      <module>maven-archetype-wicket</module>
-    </modules>
-    
-    <build>
-      <extensions>
-        <extension>
-          <groupId>org.jvnet.wagon-svn</groupId>
-          <artifactId>wagon-svn</artifactId>
-          <version>1.9</version>
-        </extension>
-      </extensions>
-      
-      <defaultGoal>install</defaultGoal>
-    </build>
-    
-    <distributionManagement>
-      <repository>
-        <id>muleforge-releases</id>
-        <name>MuleForge Releases</name>
-        <url>svn:https://svn.muleforge.org/maven2/</url>
-      </repository>
-      <snapshotRepository>
-        <id>muleforge-snapshots</id>
-        <name>MuleForge Snapshots</name>
-        <url>svn:https://svn.muleforge.org/maven2/</url>
-      </snapshotRepository>
-    </distributionManagement>
+  <modules>
+    <module>maven-archetype-webapp</module>
+    <module>maven-archetype-wicket</module>
+  </modules>
 
-    <scm>
-      <connection>scm:git:git://github.com/mulesoft/mulesoft-maven-archetypes.git</connection>
-      <developerConnection>scm:git:git://github.com/mulesoft/mulesoft-maven-archetypes.git</developerConnection>
-      <url>http://github.com/mulesoft/mulesoft-maven-archetypes.git</url>
-    </scm>
+  <build>
+    <extensions>
+      <extension>
+        <groupId>org.jvnet.wagon-svn</groupId>
+        <artifactId>wagon-svn</artifactId>
+        <version>1.9</version>
+      </extension>
+    </extensions>
+
+    <defaultGoal>install</defaultGoal>
+  </build>
+
+  <distributionManagement>
+    <repository>
+      <id>muleforge-releases</id>
+      <name>MuleForge Releases</name>
+      <url>svn:https://svn.muleforge.org/maven2/</url>
+    </repository>
+    <snapshotRepository>
+      <id>muleforge-snapshots</id>
+      <name>MuleForge Snapshots</name>
+      <url>svn:https://svn.muleforge.org/maven2/</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <scm>
+    <connection>scm:git:git://github.com/mulesoft/mulesoft-maven-archetypes.git</connection>
+    <developerConnection>scm:git:git://github.com/mulesoft/mulesoft-maven-archetypes.git</developerConnection>
+    <url>http://github.com/mulesoft/mulesoft-maven-archetypes.git</url>
+  </scm>
 </project>
