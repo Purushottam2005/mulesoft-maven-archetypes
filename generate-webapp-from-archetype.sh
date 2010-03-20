@@ -1,6 +1,6 @@
 rm -rf temp
 mkdir temp
-cd temp
+pushd temp
 
 #Sample of standard web app
 mvn org.apache.maven.plugins:maven-archetype-plugin:2.0-alpha-4:generate\
@@ -11,8 +11,9 @@ mvn org.apache.maven.plugins:maven-archetype-plugin:2.0-alpha-4:generate\
  -DartifactId=temp-sample-jsp-webapp\
  -Dversion=1.0-SNAPSHOT
 
-cd temp-sample-jsp-webapp
+pushd temp-sample-jsp-webapp
 mvn verify
+popd
 
 #Sample of Wicket web app
 mvn org.apache.maven.plugins:maven-archetype-plugin:2.0-alpha-4:generate\
@@ -23,5 +24,8 @@ mvn org.apache.maven.plugins:maven-archetype-plugin:2.0-alpha-4:generate\
  -DartifactId=temp-sample-wicket-webapp\
  -Dversion=1.0-SNAPSHOT
 
-cd temp-sample-wicket-webapp
+pushd temp-sample-wicket-webapp
 mvn verify
+popd
+
+popd
