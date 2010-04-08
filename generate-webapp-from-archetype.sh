@@ -4,7 +4,7 @@ pushd temp
 
 #Sample of standard web app
 mvn org.apache.maven.plugins:maven-archetype-plugin:2.0-alpha-4:generate\
- -DarchetypeGroupId=org.mulesoft.archetypes\
+ -DarchetypeGroupId=org.mule.tools.maven2.archetypes\
  -DarchetypeArtifactId=tomcat-webapp-archetype\
  -DarchetypeVersion=1.0.5-SNAPSHOT\
  -DgroupId=com.mysamplecompany\
@@ -17,7 +17,7 @@ popd
 
 #Sample of Wicket web app
 mvn org.apache.maven.plugins:maven-archetype-plugin:2.0-alpha-4:generate\
- -DarchetypeGroupId=org.mulesoft.archetypes\
+ -DarchetypeGroupId=org.mule.tools.maven2.archetypes\
  -DarchetypeArtifactId=tomcat-wicket-archetype\
  -DarchetypeVersion=1.0.5-SNAPSHOT\
  -DgroupId=com.mysamplecompany\
