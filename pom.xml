@@ -2,7 +2,7 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.mulesoft.archetypes</groupId>
+  <groupId>org.mule.tools.maven2.archetypes</groupId>
   <artifactId>archetypes</artifactId>
   <version>1.0.6-SNAPSHOT</version>
   <name>MuleSoft Archetypes</name>
@@ -46,13 +46,13 @@
     <repository>
       <id>muleforge.webdav.releases</id>
       <url>
-        dav:https://dav.muleforge.org/repository/maven2/
+        dav:https://dav.muleforge.org/repository/maven2
       </url>
     </repository>
     <snapshotRepository>
       <id>muleforge.webdav.snapshots</id>
       <url>
-        dav:https://dav.muleforge.org/snapshots.repository/maven2/
+        dav:https://dav.muleforge.org/snapshots.repository/maven2
       </url>
     </snapshotRepository>
     <site>
