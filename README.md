@@ -36,3 +36,15 @@ Tomcat Maven Plugin Homepage
 Tomcat Maven Plugin Deployment Options
 
 [http://mojo.codehaus.org/tomcat-maven-plugin/deployment.html](http://mojo.codehaus.org/tomcat-maven-plugin/deployment.html)
+
+## Developer Info
+The developer (WebDAV) access to the downloads (where we keep the archetype catalog) is:
+https://dav.muleforge.org/dist/maven2/
+The read only equivalent for use as a public URL is:
+http://dist.muleforge.org/maven2/
+
+The developer (WebDAV) access to the repository where the archetype artifacts are hosted is:
+https://dav.muleforge.org/repository/maven2
+and the read only equivalent is:
+http://repository.muleforge.org/org/mule/tools/maven2/
+

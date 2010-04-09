@@ -3,14 +3,14 @@
     <archetype>
       <groupId>org.mule.tools.maven2.archetypes</groupId>
       <artifactId>tomcat-webapp-archetype</artifactId>
-      <version>RELEASE</version>
+      <version>1.0.6</version>
       <repository>http://repository.muleforge.org/org/mule/tools/maven2/</repository>
       <description>JSP based web app with Tomcat integration tests</description>
     </archetype>
     <archetype>
       <groupId>org.mule.tools.maven2.archetypes</groupId>
       <artifactId>tomcat-wicket-archetype</artifactId>
-      <version>RELEASE</version>
+      <version>1.0.6</version>
       <repository>http://repository.muleforge.org/org/mule/tools/maven2/</repository>
       <description>Wicket web framework app with Tomcat integration tests</description>
     </archetype>
